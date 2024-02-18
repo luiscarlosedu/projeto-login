@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corverde: #49a09d;
+    --corlilas: #5f2c82;
+}
+
+html, body {
+    background-color: var(--corlilas);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.448);
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease;
+    transition: width 0.5s, height 0.5s;
+}
+
+div#imagem {
+    background: var(--corlilas) url(../imagens/predios.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario p {
+    font-size: 0.8em;
+}
+
+div.campo {
+    background-color: var(--corlilas);
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    border: 2px solid var(--corlilas);
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo span {
+    color: white;
+    font-size: 1.5em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input {
+    font-size: 1em;
+    border: 0;
+    padding: 4px;
+    height: 100%;
+    border-radius: 8px;
+    width: calc(100% - 44.4px);
+    transform: translateY(-5px);
+}
+
+form input[type=submit] {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    height:40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #49a09d;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+form input.submit:hover {
+    background-color: #78bbba;
+}
+
+form .botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    text-decoration: none;
+    height: 50px;
+    padding-top: 10px;
+    margin-top: 5px;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+form .botao:hover {
+    background-color: #a6cccbcf;
+    
+}
+
+form .botao > span{
+    font-size: 1em;
+}
